@@ -1,0 +1,11 @@
+:host {
+    @apply flex justify-center items-center;
+}
+
+.memory-card {
+    @apply w-fit;
+
+    &__item {
+        @apply grid grid-cols-4 gap-4;
+    }
+}

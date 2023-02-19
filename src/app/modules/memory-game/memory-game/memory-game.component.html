@@ -1,0 +1,9 @@
+<div class="memory-card">
+  <div class="memory-card__item">
+    <app-card
+      *ngFor="let card of cardList"
+      [data]="card"
+      (cardOutput)="onCardChange()"
+    ></app-card>
+  </div>
+</div>
