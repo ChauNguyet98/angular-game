@@ -46,18 +46,9 @@ export class CardComponent implements OnInit {
     state: 'default',
   };
 
-  @Output() cardOutput: EventEmitter<Card> = new EventEmitter<Card>();
+  @Output() cardClicked: EventEmitter<Card> = new EventEmitter<Card>();
 
   constructor() {}
 
   ngOnInit(): void {}
-
-  onClickCard(): void {
-    if (this.data.state === 'default') {
-      this.data.state = 'flipped';
-    } else {
-      this.data.state = 'default';
-    }
-    this.cardOutput.emit(this.data);
-  }
 }

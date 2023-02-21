@@ -1,5 +1,5 @@
 export interface Card {
-  id?: number;
+  // id?: number;
   imageId: string;
   state: 'default' | 'flipped' | 'matched';
 }
